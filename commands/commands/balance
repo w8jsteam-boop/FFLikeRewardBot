@@ -1,0 +1,17 @@
+/*CMD
+  command: /balance
+  help: Show user balance
+  keyboard: 🎬 Earn Coins, 🔗 Refer & Earn, ⬅️ Back
+CMD*/
+
+var balance = User.getProperty("balance");
+
+if (!balance) {
+  balance = 0;
+}
+
+Bot.sendMessage(
+  "💰 *YOUR BALANCE*\n\n" +
+  "🪙 Coins: " + balance + "\n\n" +
+  "Keep completing tasks to earn more."
+);
