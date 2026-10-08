@@ -1,0 +1,18 @@
+/*CMD
+  command: ❓ Help
+  aliases: /help
+  help: Help and support
+  keyboard: ⬅️ Back
+CMD*/
+
+Bot.sendMessage(
+  "❓ *HELP & SUPPORT*\n\n" +
+  "🎬 Earn Coins — Complete available tasks\n" +
+  "💰 Balance — Check your coins\n" +
+  "🔗 Refer — Get your referral link\n" +
+  "👥 Referrals — View invited users\n" +
+  "🏆 Leaderboard — View ranking\n" +
+  "📜 History — View activity\n" +
+  "💸 Withdraw — Withdrawal section\n\n" +
+  "For support, contact the bot administrator."
+);
