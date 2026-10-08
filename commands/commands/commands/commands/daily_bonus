@@ -1,0 +1,42 @@
+/*CMD
+  command: 🎁 Daily Bonus
+  aliases: /bonus
+  help: Daily reward
+  keyboard: 🎬 Earn Coins, 💰 Balance, ⬅️ Back
+CMD*/
+
+var lastBonus = User.getProperty("last_bonus");
+var now = new Date().getTime();
+
+if (lastBonus) {
+
+  var difference = now - lastBonus;
+  var hours = difference / (1000 * 60 * 60);
+
+  if (hours < 24) {
+    Bot.sendMessage(
+      "⏳ You already collected today's bonus.\n\n" +
+      "Try again after 24 hours."
+    );
+    return;
+  }
+}
+
+var reward = 10;
+
+var balance = User.getProperty("balance");
+
+if (!balance) {
+  balance = 0;
+}
+
+balance = balance + reward;
+
+User.setProperty("balance", balance, "integer");
+User.setProperty("last_bonus", now, "integer");
+
+Bot.sendMessage(
+  "🎉 *BONUS RECEIVED!*\n\n" +
+  "🪙 Reward: +" + reward + " coins\n" +
+  "💰 Balance: " + balance + " coins"
+);
