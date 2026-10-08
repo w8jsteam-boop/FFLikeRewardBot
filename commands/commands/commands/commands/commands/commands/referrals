@@ -1,0 +1,18 @@
+/*CMD
+  command: 👥 My Referrals
+  aliases: /referrals
+  help: Show referrals
+  keyboard: 🔗 Refer & Earn, ⬅️ Back
+CMD*/
+
+var referrals = User.getProperty("referrals");
+
+if (!referrals) {
+  referrals = 0;
+}
+
+Bot.sendMessage(
+  "👥 *MY REFERRALS*\n\n" +
+  "👤 Total Invited: " + referrals + "\n\n" +
+  "🔗 Keep sharing your referral link."
+);
