@@ -1,0 +1,10 @@
+/*CMD
+  command: ⬅️ Back
+  aliases: /back
+  help: Return to main menu
+  keyboard: 🎬 Earn Coins, 💰 Balance, 🔗 Refer & Earn, 👥 My Referrals, 🏆 Leaderboard, 📜 History, 💸 Withdraw, ❓ Help
+CMD*/
+
+Bot.sendMessage(
+  "🏠 *MAIN MENU*\n\nChoose an option below."
+);
