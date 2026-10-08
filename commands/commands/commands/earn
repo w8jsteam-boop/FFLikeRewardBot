@@ -1,0 +1,12 @@
+/*CMD
+  command: 🎬 Earn Coins
+  aliases: /earn
+  help: Earn reward coins
+  keyboard: 🎁 Daily Bonus, ⬅️ Back
+CMD*/
+
+Bot.sendMessage(
+  "🎬 *EARN COINS*\n\n" +
+  "Complete available tasks and collect reward coins.\n\n" +
+  "🎁 Daily Bonus is available from the button below."
+);
