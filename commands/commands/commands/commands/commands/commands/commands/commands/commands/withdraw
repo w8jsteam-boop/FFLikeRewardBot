@@ -1,0 +1,32 @@
+/*CMD
+  command: 💸 Withdraw
+  aliases: /withdraw
+  help: Withdrawal section
+  keyboard: 💰 Balance, 📜 History, ⬅️ Back
+CMD*/
+
+var balance = User.getProperty("balance");
+
+if (!balance) {
+  balance = 0;
+}
+
+var minimum = 100;
+
+if (balance < minimum) {
+
+  Bot.sendMessage(
+    "💸 *WITHDRAW*\n\n" +
+    "💰 Current Balance: " + balance + " coins\n" +
+    "📌 Minimum Required: " + minimum + " coins\n\n" +
+    "Keep earning to reach the minimum."
+  );
+
+  return;
+}
+
+Bot.sendMessage(
+  "💸 *WITHDRAW REQUEST*\n\n" +
+  "Your balance is eligible for a withdrawal request.\n\n" +
+  "A proper payout workflow can be connected here."
+);
