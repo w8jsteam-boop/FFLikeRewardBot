@@ -1,0 +1,11 @@
+/*CMD
+  command: 📜 History
+  aliases: /history
+  help: User transaction history
+  keyboard: 💰 Balance, ⬅️ Back
+CMD*/
+
+Bot.sendMessage(
+  "📜 *TRANSACTION HISTORY*\n\n" +
+  "No transactions recorded yet."
+);
