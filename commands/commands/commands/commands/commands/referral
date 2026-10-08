@@ -1,0 +1,19 @@
+/*CMD
+  command: 🔗 Refer & Earn
+  aliases: /referral
+  help: Referral system
+  keyboard: 👥 My Referrals, ⬅️ Back
+CMD*/
+
+var botUsername = bot.name;
+
+var referralLink =
+"https://t.me/" + botUsername + "?start=" + user.telegramid;
+
+Bot.sendMessage(
+  "🔗 *REFER & EARN*\n\n" +
+  "Invite your friends using your personal link.\n\n" +
+  "🎁 Referral rewards can be configured by the admin.\n\n" +
+  "🔗 Your Referral Link:\n" +
+  referralLink
+);
