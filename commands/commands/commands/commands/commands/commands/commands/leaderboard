@@ -1,0 +1,14 @@
+/*CMD
+  command: 🏆 Leaderboard
+  aliases: /leaderboard
+  help: Top users
+  keyboard: ⬅️ Back
+CMD*/
+
+Bot.sendMessage(
+  "🏆 *LEADERBOARD*\n\n" +
+  "🥇 Top 1 — Coming Soon\n" +
+  "🥈 Top 2 — Coming Soon\n" +
+  "🥉 Top 3 — Coming Soon\n\n" +
+  "The full ranking system can be connected next."
+);
