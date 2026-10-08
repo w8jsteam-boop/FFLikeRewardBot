@@ -1,0 +1,23 @@
+/*CMD
+  command: /start
+  help: Start FF Like Bot
+  answer: 
+  keyboard: 🎬 Earn Coins, 💰 Balance, 🔗 Refer & Earn, 👥 My Referrals, 🏆 Leaderboard, 📜 History, 💸 Withdraw, ❓ Help
+CMD*/
+
+var balance = User.getProperty("balance");
+
+if (!balance) {
+  User.setProperty("balance", 0, "integer");
+}
+
+var welcome =
+"🔥 *FF LIKE BOT*\n\n" +
+"👋 Welcome, " + user.first_name + "!\n\n" +
+"🎬 Complete available tasks\n" +
+"💰 Collect reward points\n" +
+"🔗 Invite friends\n" +
+"🏆 Check leaderboard\n\n" +
+"👇 Choose an option:";
+
+Bot.sendMessage(welcome);
